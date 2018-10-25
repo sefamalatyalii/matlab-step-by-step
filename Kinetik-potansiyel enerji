@@ -1,0 +1,14 @@
+% değerleriyle kinetik ve potansiyel enerjıyı hesaplayan program
+clc;
+clear;
+clear all;
+v=input('hiz=');
+m=input('kutle=');
+h=input('yerden=');
+[ep ek] = enerji(v,m,h)
+
+function [ep ek] = enerji(v,m,h) %önce çıkıslar sonra girişler şeklinde yazılır
+g=9.8; %g değeri fonksıyonda kullanılıyorsa buraya atılır
+ep=(m*g*h);
+ek=(0.5*m*v^2);
+end
