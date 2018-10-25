@@ -1,0 +1,22 @@
+%klavyeden girilen sayıların tek olanlarını kendı aralarında çift
+%olanlarını sayılarını bulup toplayan program 
+
+clc;
+clear;
+clear all;
+cifttoplam=0;
+tektoplam=0;
+
+n=input('sayigir=');
+toplam=0;
+for i=1:1:n
+toplam=toplam+i
+if rem(i,2)==0
+cifttoplam=cifttoplam+i;
+elseif rem(i,2)==1
+tektoplam=tektoplam+i;
+end
+end
+toplam
+cifttoplam
+tektoplam
