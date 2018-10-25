@@ -1,0 +1,23 @@
+%klavyeden eleman sayısı gırılen bir kumenın belirtilen kombınasyonlarının
+%sayısınıı hesaplayan program n!/(r!*(n-r)!)
+clc;
+clear;
+clear all;
+
+n=input('nsayisi=');
+r=input('rsayisi=');
+
+nfak=1;
+rfak=1;
+n_rfak=1;
+
+for i=1:1:n
+    nfak=nfak*i; 
+end    
+for j=1:1:r
+    rfak=rfak*j; 
+end
+for k=1:1:n-r;
+    n_rfak=n_rfak*k; 
+end
+sonuc=nfak/(rfak*n_rfak)
