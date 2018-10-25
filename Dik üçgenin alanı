@@ -1,0 +1,7 @@
+% kullanıcıdan yükseklik ve taban uzunluğu istenen bir dik üçgenin alanını
+% hesaplayan program S=(taban*yükseklik)/2
+
+a=input('yukseklık giriniz=');
+b=input('taban uzunlugu giriniz=');
+S=(a*b)/2;
+S
