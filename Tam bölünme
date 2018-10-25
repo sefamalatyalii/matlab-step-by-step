@@ -1,0 +1,14 @@
+%klavyeden gırılen a sayısının klavyeden gırılen b sayısına tam blunup
+%bolunmadıgını veren program
+clc;
+clear;
+clear all;
+
+ilksayi=input('asayisi=');
+ikincisayi=input('bsayisi=');
+a=3;
+if rem(ilksayi,ikincisayi)==0 & rem(ilksayi,a)==0
+    fprintf('%d sayisi %d sayisine ve %d sayisina tambolunur',ilksayi,ikincisayi,a)
+else
+    fprintf('%d sayisi %d sayisine tambolunmez',ilksayi,ikincisayi)
+end
