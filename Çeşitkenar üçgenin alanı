@@ -1,0 +1,15 @@
+% kullanıcıdan üç kenarının uzunlupu istenilen çeşitkenar üçgenin alanını hesaplayan program.
+clc;
+clear;
+clear all;
+
+a=input('kenar_1=');
+b=input('kenar_2=');
+c=input('kenar_3=');
+u=(a+b+c)/2;
+sonuc=alan(a,b,c,u);
+
+function y=alan(a,b,c,u)
+y=sqrt(u*(u-a)*(u-b)*(u-c));
+end
+sonuc
