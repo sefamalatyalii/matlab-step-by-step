@@ -1,0 +1,16 @@
+%kullanıcıdan yarıçapı ve acı değeri radyan cinsinden alınan bir daire
+%diliminin alanını hesaplayan program
+
+clc;
+clear;
+clear all;
+
+r=input('yaricap=');
+aci=input('radyan');
+radyan = aci*pi/180;
+
+sonuc=alan(r,aci)
+
+function y=alan(r,aci)
+y=(aci*pi*r^2)/360;
+end
