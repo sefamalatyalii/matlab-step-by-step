@@ -1,0 +1,11 @@
+% kullanıcıdan iki kenar uzunluğu ve acı değeri istenen bir üçgenin alanı
+% bulan program S=1/2(a*b*sin(c))
+clc;
+clear; 
+clear all;
+
+a=input('kenar_1= ');
+b=input('kenar_2= ');
+c=input('acı_degeri');
+S=0.5*a*b*sin(c);
+S
