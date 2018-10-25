@@ -1,0 +1,11 @@
+%öklit bağlantısı kullanılarak kenar uzunluklarını ve yüksekliği veren program
+p=input('pyi gir=');
+k=input('kyi gir=');
+
+[a b c h] = uzunluk(p,k)
+function [a b c h] = uzunluk(p,k)
+a = p+k
+b = sqrt(a*k)
+c = sqrt(a*p)
+h = sqrt(p*k)
+end
