@@ -1,0 +1,17 @@
+%kullanıcıdan alınan yarıçap değerine göre kürenin alan ve hacmini
+%hesaplayan program
+clc;
+clear;
+clear all;
+r=input('yaricap=')
+y=hacim(r) %fonksiyon içine fonksıyon yazılabılır
+z=alan(r)
+
+
+function y=hacim(r)
+y=(4/3)*(pi*r^3);
+end
+
+function z=alan(r)
+z=(4*pi*r^2);
+end
