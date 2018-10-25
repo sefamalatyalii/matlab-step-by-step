@@ -1,0 +1,11 @@
+%kullanıcıdan iki kenar uzunluğu ve aralarındaki açı değeri alınan üçgenin
+%alanını bulan program
+clc;
+clear;
+clear all;
+
+a=input('kenar_1=');
+b=input('kenar_2=');
+c=input('aciyi_giriniz=');
+S=((a*a+b*b)-(2*a*b*cos(c)))^0.5;
+S
