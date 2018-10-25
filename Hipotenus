@@ -1,0 +1,9 @@
+%kullanıcıdan iki kenarı istenen dik üçgenin hipotenüsünü bulan program
+clc;
+clear;
+clear all;
+
+a=input('kenar_1=');
+b=input('kenar_2=');
+c=sqrt(a^2+b^2);
+c
