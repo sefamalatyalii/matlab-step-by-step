@@ -1,0 +1,18 @@
+% kullanıcıdan başkatsayıları alınan 2.dereceden denklemin koklerini bulan program
+%ax^2+b*c+c=0 delta=b^2-4*a*c 
+
+clc;
+clear;
+clear all;
+x=0;
+a=input('a baskatsayisi=');
+b=input('b baskatsayisi=');
+c=input('c baskatsayisi=');
+
+[kok1 kok2] = sonuc(a,b,c)
+
+function [kok1 kok2] = sonuc(a,b,c)
+delta=((b^2)-(4*a*c));
+kok1=(-b-sqrt(delta))/(2*a);
+kok2=(-b+sqrt(delta))/(2*a);
+end
