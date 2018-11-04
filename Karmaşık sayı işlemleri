@@ -1,0 +1,26 @@
+%klavyeden girilen iki karmaşık sayının seçilen isleme göre(toplama
+%çıkarma bölme veya çarpma) sonuç üreten program
+
+clc;
+clear;
+clear all;
+
+a1=input('a1 katsayısı giriniz=');
+b1=input('b1 katsayısı giriniz=');
+a2=input('a2 katsayısı giriniz=');
+b2=input('b2 katsayısı giriniz=');
+z1=a1+1i*b1;
+z2=a2+1i*b2;
+
+fprintf("toplama için = 1 \n  cikarma için = 2 \n çarpma için = 3 \n bolme için = 4 seçiniz\n");
+islem=input('bir işlem seçiniz=');
+
+if islem==1 %toplama
+     sonuc=((a1+a2)+1i*(b1+b2))
+elseif islem==2 %çıkarma
+    sonuc=((a1-a2)+1i*(b1-b2))   
+elseif islem==3 %çarpma
+    sonuc=(((a1*a2)-(b1*b2))+(1i*((a1*b2)-(a2*b1))))
+elseif islem==4 %bölme
+    sonuc=(((a1*a2)-(b1*b2))/(a2^2+b2^2)+(((a2*b1)-(a1*b2))/(a2^2+b2^2))*i)
+end
