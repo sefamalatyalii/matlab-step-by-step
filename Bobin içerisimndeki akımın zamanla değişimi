@@ -1,0 +1,20 @@
+%elektriksel R L devresinde bobin üzerindeki akımın zamanla değişimini
+%hesaplayan program
+clc;
+clear;
+clear all;
+t=0; %mevcut saniye değeri
+E=input('bir E değeri giriniz=');
+R=input('bir R değeri giriniz=');
+i=input('bir i değeri giriniz=');
+L=input('bir L değeri giriniz=');
+s=input('bir t atış miktarı değeri giriniz=');
+tt=input('bir t toplam süre değeri giriniz=');
+
+while t<tt
+    t=t+s;
+    sonuc=fonksiyon(E,R,i,L,t)
+end   
+function iL=fonksiyon(E,R,i,L,t)   
+iL=((i-(E/R))*exp(-(R*t)/L)+(E/R));
+end
