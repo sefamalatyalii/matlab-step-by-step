@@ -1,0 +1,20 @@
+% Bir kondansatorün şarj sırasında gerilim değerinin belirlenen aralıklarla ve belirlenen süre boyuncaki değerini bulan program
+clc;
+clear;
+clear all;
+t=0;
+E = input('bir E değeri giriniz=');
+R = input('bir R değeri giriniz=');
+C = input('bir C değeri giriniz=');
+V0 = input('bir V0 değeri giriniz=');
+s=input('bir artis miktari değeri giriniz=');
+tt=input('bir inceleme zamani değeri giriniz=');
+
+while t<tt
+    t=t+s;
+    sonuc=fonksiyon(E,R,C,V0,t)
+end
+
+function Vc=fonksiyon(E,R,C,V0,t)
+Vc=E+(V0-E)*exp(-t/(R*C));
+end
