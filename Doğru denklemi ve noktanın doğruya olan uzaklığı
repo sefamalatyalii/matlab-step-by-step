@@ -1,0 +1,21 @@
+%klavyeden girilen bir noktanın ax+by+c=0 doğrusu üzerinde olup olmadığını
+%araştıran ve eğer doğru üzerinde değilse doğruya olan uzaklığını bulan
+%program
+
+clc;
+clear;
+clear all;
+a=input('a noktası giriniz=');
+b=input('b noktası giriniz=');
+c=input('c noktası giriniz=');
+x=input('x noktası giriniz=');
+y=input('y noktası giriniz=');
+uzunluk=0;
+
+if (a*x)+(b*y)+c==0
+    fprintf('denklemi saglıyor') % a=2 b=-4 c=0 x=2 y=1 için denklem sağlanır
+else
+    uzunluk=abs(((a*x)+(b*y)+c)/sqrt(a^2+b^2)) % a=2 b=5 c=1 x=3 y=4 için denklem sağlanmaz
+                                               % uzunluk hesaplanır
+end
+   
